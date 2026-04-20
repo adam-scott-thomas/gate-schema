@@ -168,7 +168,7 @@ def test_validate_real_filter_result():
         "visible": [{"name": t.name, "execution_class": t.execution_class} for t in result.visible],
         "suppressed": [{"name": t.name, "execution_class": t.execution_class} for t in result.suppressed],
         "mode": result.mode,
-        "mode_zone": result.mode_status,
+        "mode_zone": result.mode_zone,
         "thresholds": {k: v for k, v in result.thresholds.items() if v is not None},
     })
 
