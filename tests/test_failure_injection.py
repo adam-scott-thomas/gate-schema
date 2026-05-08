@@ -140,7 +140,7 @@ def test_validation_error_has_path():
 
 def test_validate_real_gate_core_tools():
     """gate-core Tool objects should validate as tools when converted to dict."""
-    from maelstrom_gate import Gate, Tool
+    from gatekeeper import Gate, Tool
     gate = Gate()
     gate.add_tools([
         Tool("read", execution_class="read_only", description="Read files"),
@@ -157,7 +157,7 @@ def test_validate_real_gate_core_tools():
 
 def test_validate_real_filter_result():
     """gate-core filter result should validate against filter_result schema."""
-    from maelstrom_gate import Gate, Tool
+    from gatekeeper import Gate, Tool
     gate = Gate()
     gate.add_tools([
         Tool("read", execution_class="read_only"),
@@ -175,7 +175,7 @@ def test_validate_real_filter_result():
 
 def test_validate_real_envelope():
     """gate-core envelope should validate against envelope schema."""
-    from maelstrom_gate import Tool, build_envelope
+    from gatekeeper import Tool, build_envelope
     e = build_envelope(Tool("r", execution_class="read_only"), 0.1, "ctx", "key")
     data = asdict(e)
     data["allowed_tools"] = list(data["allowed_tools"])  # tuple -> list for JSON

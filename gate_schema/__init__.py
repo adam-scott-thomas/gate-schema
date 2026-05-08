@@ -1,4 +1,4 @@
-"""gate-schema: JSON Schema validation for Maelstrom Gate.
+"""gate-schema: JSON Schema validation for Gatekeeper.
 
 Validates tools, policies, envelopes, and filter results against
 the spec's formal schemas. The conformance enforcer.

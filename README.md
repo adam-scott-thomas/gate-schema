@@ -4,7 +4,7 @@
 [![tests](https://img.shields.io/badge/tests-31_passing-brightgreen)]()
 [![license](https://img.shields.io/badge/license-Apache_2.0-green)]()
 
-> JSON Schema validator for Maelstrom Gate artifacts.
+> JSON Schema validator for Gatekeeper artifacts.
 
 Conformance enforcement for tools, policies, envelopes, and filter results.
 Ships the canonical schemas derived from SPEC.md and a handful of `validate_*`
@@ -58,7 +58,7 @@ malformed envelopes).
 
 ## How it fits
 
-Layer 3 (observability) in [Maelstrom Gate](https://github.com/adam-scott-thomas/maelstrom-gate).
+Layer 3 (observability) in [Gatekeeper](https://github.com/adam-scott-thomas/gate-keeper).
 Used by `gate-compliance`'s `ValidatedCollector` and optionally by `gate-server`
 request middleware.
 

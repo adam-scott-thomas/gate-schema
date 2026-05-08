@@ -9,7 +9,7 @@ from gate_schema.validator import (
 )
 
 print("=" * 65)
-print("  gate-schema -- JSON Schema Validation for Maelstrom Gate")
+print("  gate-schema -- JSON Schema Validation for Gatekeeper")
 print("=" * 65)
 
 # --- Valid artifacts ---
